@@ -2,6 +2,7 @@
  
 - hosts: all
   become: true
+  remote_user: pi
   pre_tasks:
  
   - name: install updates (CentOS)
@@ -20,6 +21,7 @@
  
 - hosts: all
   become: true
+  remote_user: pi
   tasks:
  
   - name: create ansible user
