@@ -1,8 +1,4 @@
----
- 
-- hosts: webservers
-  become: true
-  tasks:
+
  
   - name: update repository index
     apt:

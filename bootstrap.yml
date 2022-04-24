@@ -41,3 +41,10 @@
       owner: root
       group: root
       mode: 0440
+
+
+- hosts: webservers
+  become: true
+  tasks:
+  - name: install apache for webservers
+    include: install_apache1.yml 
